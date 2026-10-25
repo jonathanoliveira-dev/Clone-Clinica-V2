@@ -1,7 +1,7 @@
 const options = [
   {
     id: "option-1",
-    number: "OPÇÃO 01",
+    number: "OPÇÃO 1",
     title: "Implante + coroa",
     description: "Um implante colocado no osso serve de suporte para uma coroa, após avaliação clínica.",
     benefit: "Pode substituir o dente sem preparar os dentes vizinhos, quando indicado.",
@@ -12,7 +12,7 @@ const options = [
   },
   {
     id: "option-2",
-    number: "OPÇÃO 02",
+    number: "OPÇÃO 2",
     title: "Ponte fixa",
     description: "Uma prótese fixa que ocupa o espaço e se apoia nos dentes adjacentes.",
     benefit: "Fica fixa na boca e não é retirada diariamente pelo utilizador.",
@@ -23,7 +23,7 @@ const options = [
   },
   {
     id: "option-3",
-    number: "OPÇÃO 03",
+    number: "OPÇÃO 3",
     title: "Prótese parcial removível",
     description: "Uma prótese removível que pode substituir um ou mais dentes ausentes.",
     benefit: "Pode ser retirada para limpeza e não requer cirurgia de implante.",
