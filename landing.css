@@ -1,0 +1,153 @@
+:root {
+  color-scheme: light;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.splash {
+  display: grid;
+  width: 100%;
+  min-height: 100svh;
+  place-items: center;
+  background: #fff;
+}
+
+.tooth-pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(24px, 7vw, 82px);
+  padding: 24px;
+}
+
+.tooth-link {
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 240ms cubic-bezier(.2, .75, .3, 1);
+}
+
+.tooth-link:hover {
+  transform: translateY(-9px);
+}
+
+.tooth-link:focus-visible {
+  outline: 3px solid #357bb5;
+  outline-offset: 8px;
+}
+
+.pixel-tooth {
+  display: block;
+  width: clamp(72px, 10vw, 116px);
+  height: auto;
+  overflow: visible;
+  shape-rendering: crispEdges;
+  image-rendering: pixelated;
+  animation: tooth-bob 3s ease-in-out infinite;
+}
+
+.pixel-tooth--coral {
+  animation-delay: -1.5s;
+}
+
+.tooth-shadow {
+  fill: #d7e5ef;
+}
+
+.pixel-tooth--coral .tooth-shadow {
+  fill: #f0dfda;
+}
+
+.tooth-body {
+  fill: #fff;
+  stroke: #357bb5;
+  stroke-width: 5px;
+  stroke-linejoin: miter;
+}
+
+.pixel-tooth--coral .tooth-body {
+  stroke: #e68168;
+}
+
+.tooth-shine {
+  fill: #dcedf9;
+}
+
+.pixel-tooth--coral .tooth-shine {
+  fill: #ffebe5;
+}
+
+.tooth-eye {
+  fill: #285f91;
+}
+
+.pixel-tooth--coral .tooth-eye {
+  fill: #964d43;
+}
+
+.tooth-mouth {
+  fill: #36a895;
+}
+
+.pixel-tooth--coral .tooth-mouth {
+  fill: #e68168;
+}
+
+.play-link {
+  position: fixed;
+  right: clamp(18px, 3vw, 34px);
+  bottom: clamp(18px, 3vw, 34px);
+  display: grid;
+  width: 54px;
+  height: 48px;
+  place-items: center;
+  border-radius: 16px;
+  color: #c85f43;
+  background: #f8ded5;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.play-link:hover {
+  transform: translateY(-3px);
+  background: #f4cfc2;
+}
+
+.play-link:focus-visible {
+  outline: 3px solid #e68168;
+  outline-offset: 4px;
+}
+
+.play-link svg {
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+  fill: currentColor;
+}
+
+@keyframes tooth-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}

@@ -2,14 +2,17 @@
   color-scheme: light;
   --navy: #183544;
   --navy-soft: #365260;
-  --teal: #138b83;
-  --teal-dark: #0e716b;
-  --teal-pale: #e9f5f3;
+  --blue: #357bb5;
+  --blue-dark: #285f91;
+  --blue-pale: #eaf3fb;
+  --mint: #36a895;
+  --coral: #e68168;
+  --sunshine: #efbd55;
   --ink: #263b45;
   --muted: #71818a;
   --line: #e4eaec;
   --surface: #fff;
-  --canvas: #f5f8f8;
+  --canvas: #f5f8fb;
   --shadow: 0 8px 28px rgb(28 56 68 / 5%);
   font-family: "Avenir Next", "Segoe UI", sans-serif;
   font-synthesis: none;
@@ -24,7 +27,7 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(ellipse at 8% 4%, rgb(222 241 237 / 60%), transparent 27rem),
+    radial-gradient(ellipse at 8% 4%, rgb(226 238 249 / 60%), transparent 27rem),
     radial-gradient(ellipse at 94% 28%, rgb(233 241 246 / 75%), transparent 25rem),
     var(--canvas);
   -webkit-font-smoothing: antialiased;
@@ -62,14 +65,14 @@ button {
   place-items: center;
   border-radius: 11px;
   color: #fff;
-  background: linear-gradient(145deg, #22a49a, #0e716b);
-  box-shadow: 0 5px 12px rgb(19 139 131 / 20%);
+  background: linear-gradient(145deg, #4b91ca, #285f91);
+  box-shadow: 0 5px 12px rgb(53 123 181 / 20%);
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
 .brand:hover .brand-mark {
   transform: rotate(-7deg) scale(1.06);
-  box-shadow: 0 8px 17px rgb(19 139 131 / 27%);
+  box-shadow: 0 8px 17px rgb(53 123 181 / 27%);
 }
 
 .brand-mark svg {
@@ -85,7 +88,7 @@ button {
 }
 
 .brand-name span {
-  color: var(--teal);
+  color: var(--blue);
 }
 
 .prototype-label {
@@ -93,9 +96,9 @@ button {
   align-items: center;
   gap: 8px;
   padding: 8px 12px;
-  border: 1px solid #dce9e7;
+  border: 1px solid #dce6f0;
   border-radius: 999px;
-  color: #45646a;
+  color: #45647a;
   background: rgb(255 255 255 / 72%);
   box-shadow: 0 4px 14px rgb(28 56 68 / 3%);
   font-size: 12px;
@@ -107,11 +110,11 @@ button {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--teal);
+  background: var(--blue);
 }
 
 .prototype-label span {
-  box-shadow: 0 0 0 4px rgb(19 139 131 / 10%);
+  box-shadow: 0 0 0 4px rgb(53 123 181 / 10%);
   animation: status-pulse 2.8s ease-in-out infinite;
 }
 
@@ -135,7 +138,7 @@ button {
 
 .eyebrow {
   margin: 0 0 10px;
-  color: var(--teal-dark);
+  color: var(--blue-dark);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1.25px;
@@ -178,16 +181,16 @@ h1 {
   align-items: flex-start;
   gap: 11px;
   padding: 15px 16px;
-  border: 1px solid rgb(197 224 219 / 85%);
+  border: 1px solid rgb(201 220 238 / 85%);
   border-radius: 13px;
-  background: linear-gradient(135deg, rgb(239 249 246 / 96%), rgb(248 251 250 / 96%));
-  box-shadow: 0 12px 28px rgb(30 80 78 / 5%);
+  background: linear-gradient(135deg, rgb(239 246 253 / 96%), rgb(248 251 254 / 96%));
+  box-shadow: 0 12px 28px rgb(30 68 102 / 5%);
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
 .demo-notice:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 32px rgb(30 80 78 / 9%);
+  box-shadow: 0 16px 32px rgb(30 68 102 / 9%);
 }
 
 .demo-notice p {
@@ -198,7 +201,7 @@ h1 {
 }
 
 .demo-notice strong {
-  color: #315a5c;
+  color: #315675;
 }
 
 .notice-icon {
@@ -209,7 +212,7 @@ h1 {
   place-items: center;
   border-radius: 50%;
   color: #fff;
-  background: var(--teal);
+  background: var(--blue);
   font-family: "Avenir Next", "Segoe UI", sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -225,12 +228,12 @@ h1 {
   grid-row: 1 / span 2;
   overflow: hidden;
   place-items: center;
-  border: 1px solid rgb(211 231 227 / 85%);
+  border: 1px solid rgb(211 226 241 / 85%);
   border-radius: 26px;
   background:
     radial-gradient(circle at var(--pointer-x) var(--pointer-y), rgb(255 255 255 / 78%), transparent 30%),
     radial-gradient(ellipse at 50% 53%, rgb(255 255 255 / 95%) 0, rgb(255 255 255 / 44%) 31%, transparent 66%),
-    linear-gradient(145deg, #e8f5f1, #f1f7f9 55%, #e6f1f3);
+    linear-gradient(145deg, #eaf3fb, #f1f7fb 55%, #e6eff8);
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 90%), 0 20px 48px rgb(28 56 68 / 7%);
   isolation: isolate;
   perspective: 900px;
@@ -238,7 +241,7 @@ h1 {
 }
 
 .hero-art.is-pointer-active {
-  box-shadow: inset 0 1px 0 #fff, 0 25px 55px rgb(28 76 74 / 13%);
+  box-shadow: inset 0 1px 0 #fff, 0 25px 55px rgb(37 81 117 / 13%);
 }
 
 .hero-art::before,
@@ -264,7 +267,7 @@ h1 {
 .hero-orbit {
   position: absolute;
   z-index: -1;
-  border: 1px solid rgb(117 177 168 / 22%);
+  border: 1px solid rgb(117 160 198 / 22%);
   border-radius: 50%;
   transform: rotate(-24deg);
 }
@@ -287,7 +290,7 @@ h1 {
 .hero-tooth {
   position: absolute;
   width: 142px;
-  filter: drop-shadow(0 16px 12px rgb(32 80 78 / 15%));
+  filter: drop-shadow(0 16px 12px rgb(32 65 95 / 15%));
 }
 
 .hero-tooth svg {
@@ -305,7 +308,7 @@ h1 {
 
 .hero-art.is-pointer-active .hero-tooth--main {
   animation-play-state: paused;
-  filter: drop-shadow(0 23px 15px rgb(32 80 78 / 21%));
+  filter: drop-shadow(0 23px 15px rgb(32 65 95 / 21%));
   transform:
     translateY(-5px)
     rotateX(var(--tooth-tilt-x, 0deg))
@@ -339,7 +342,7 @@ h1 {
   border-radius: 11px;
   color: #36555d;
   background: rgb(255 255 255 / 83%);
-  box-shadow: 0 8px 24px rgb(33 74 77 / 10%);
+  box-shadow: 0 8px 24px rgb(33 64 92 / 10%);
   font-size: 10px;
   font-weight: 700;
   backdrop-filter: blur(12px);
@@ -358,7 +361,7 @@ h1 {
   left: 0;
   width: 100%;
   margin: 0;
-  color: #6f8988;
+  color: #6f8397;
   font-size: 9px;
   font-weight: 600;
   text-align: center;
@@ -368,8 +371,8 @@ h1 {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #24a091;
-  box-shadow: 0 0 0 4px #e3f4ef;
+  background: #4b91ca;
+  box-shadow: 0 0 0 4px #e5f0fa;
 }
 
 .hero-option-selector {
@@ -383,7 +386,7 @@ h1 {
   border: 1px solid rgb(255 255 255 / 90%);
   border-radius: 999px;
   background: rgb(255 255 255 / 76%);
-  box-shadow: 0 6px 20px rgb(33 74 77 / 10%);
+  box-shadow: 0 6px 20px rgb(33 64 92 / 10%);
   backdrop-filter: blur(10px);
   transform: translateX(-50%);
 }
@@ -395,7 +398,7 @@ h1 {
   place-items: center;
   border: 0;
   border-radius: 50%;
-  color: #68817e;
+  color: #687f96;
   background: transparent;
   cursor: pointer;
   font: inherit;
@@ -405,20 +408,20 @@ h1 {
 }
 
 .hero-option-button:hover {
-  color: var(--teal-dark);
+  color: var(--blue-dark);
   transform: translateY(-2px);
 }
 
 .hero-option-button.is-active {
   color: #fff;
-  background: linear-gradient(145deg, #25a397, #0e716b);
-  box-shadow: 0 3px 9px rgb(19 139 131 / 25%);
+  background: linear-gradient(145deg, #4b91ca, #285f91);
+  box-shadow: 0 3px 9px rgb(53 123 181 / 25%);
 }
 
 .hero-spark {
   position: absolute;
   z-index: 5;
-  color: #69aaa0;
+  color: #78a9d2;
   animation: sparkle 3.4s ease-in-out infinite;
 }
 
@@ -431,7 +434,7 @@ h1 {
 .hero-spark--two {
   top: 53%;
   right: 16%;
-  color: #a2c9c4;
+  color: #f0a08a;
   font-size: 25px;
   animation-delay: -1s;
 }
@@ -439,7 +442,7 @@ h1 {
 .hero-spark--three {
   right: 28%;
   bottom: 18%;
-  color: #d1a75c;
+  color: var(--sunshine);
   font-size: 13px;
   animation-delay: -2s;
 }
@@ -449,7 +452,7 @@ h1 {
   right: 0;
   bottom: 7px;
   left: 0;
-  color: #78928f;
+  color: #7a8fa3;
   font-size: 6px;
   font-weight: 700;
   letter-spacing: .75px;
@@ -473,8 +476,9 @@ h1 {
   border: 1px solid #26383f;
   border-radius: 24px;
   background:
-    radial-gradient(ellipse at 78% 51%, rgb(30 112 106 / 20%), transparent 35%),
-    radial-gradient(ellipse at 4% 100%, rgb(20 67 67 / 24%), transparent 45%),
+    radial-gradient(ellipse at 78% 51%, rgb(45 103 158 / 20%), transparent 35%),
+    radial-gradient(ellipse at 96% 8%, rgb(230 129 104 / 9%), transparent 28%),
+    radial-gradient(ellipse at 4% 100%, rgb(30 65 101 / 24%), transparent 45%),
     linear-gradient(120deg, #10191d 0%, #111d21 50%, #101719 100%);
   box-shadow: 0 24px 64px rgb(24 53 68 / 13%), inset 0 1px 0 rgb(255 255 255 / 4%);
   isolation: isolate;
@@ -484,7 +488,7 @@ h1 {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background-image: radial-gradient(rgb(217 245 239 / 12%) .65px, transparent .65px);
+  background-image: radial-gradient(rgb(217 235 250 / 12%) .65px, transparent .65px);
   background-size: 19px 19px;
   content: "";
   mask-image: linear-gradient(90deg, #000 0%, transparent 70%);
@@ -499,7 +503,7 @@ h1 {
   right: 19%;
   width: 480px;
   height: 900px;
-  border: 1px solid rgb(211 242 236 / 5%);
+  border: 1px solid rgb(211 233 250 / 7%);
   border-radius: 50%;
   content: "";
   pointer-events: none;
@@ -518,7 +522,7 @@ h1 {
   align-items: center;
   gap: 9px;
   margin: 0 0 24px;
-  color: #a1b9b6;
+  color: #a1b6ca;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -527,18 +531,18 @@ h1 {
 .hero-kicker-line {
   width: 20px;
   height: 1px;
-  background: #51c6ad;
-  box-shadow: 0 0 10px rgb(81 198 173 / 70%);
+  background: #5ed0b6;
+  box-shadow: 0 0 10px rgb(94 208 182 / 70%);
 }
 
 .hero-kicker-separator {
-  color: #546966;
+  color: #566b80;
 }
 
 .hero-stage h1 {
   max-width: 590px;
   margin: 0;
-  color: #f4f8f6;
+  color: #f4f8fc;
   font-size: clamp(37px, 5vw, 64px);
   font-weight: 600;
   letter-spacing: -3.1px;
@@ -546,8 +550,8 @@ h1 {
 }
 
 .hero-stage h1 span {
-  color: #72d1b8;
-  background: linear-gradient(100deg, #91e2c7, #6fc9b3 60%, #c2e4a1);
+  color: #79baf1;
+  background: linear-gradient(100deg, #9bcdf5, #71afe8 58%, #9bdccf 82%, #f0b29f);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -555,7 +559,7 @@ h1 {
 .hero-stage .intro-text {
   max-width: 440px;
   margin: 20px 0 24px;
-  color: #9aabae;
+  color: #9aabba;
   font-size: 13px;
   line-height: 1.8;
 }
@@ -566,11 +570,11 @@ h1 {
   align-items: center;
   gap: 18px;
   padding: 0 15px 0 17px;
-  border: 1px solid rgb(116 213 186 / 50%);
+  border: 1px solid rgb(130 188 235 / 55%);
   border-radius: 7px;
-  color: #10221f;
-  background: linear-gradient(110deg, #9ae5ca, #74d2b8);
-  box-shadow: 0 7px 20px rgb(89 210 174 / 15%);
+  color: #102536;
+  background: linear-gradient(110deg, #a4d3f7, #76b6ed);
+  box-shadow: 0 7px 20px rgb(89 165 226 / 18%);
   font-size: 10px;
   font-weight: 700;
   text-decoration: none;
@@ -579,7 +583,7 @@ h1 {
 
 .hero-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgb(89 210 174 / 26%);
+  box-shadow: 0 10px 25px rgb(89 165 226 / 30%);
 }
 
 .hero-cta-icon {
@@ -613,9 +617,9 @@ h1 {
   height: 16px;
   flex: 0 0 16px;
   place-items: center;
-  border: 1px solid #7d9a94;
+  border: 1px solid #7d92a8;
   border-radius: 50%;
-  color: #a6c9bf;
+  color: #a9c9e6;
   font-size: 9px;
   font-weight: 700;
 }
@@ -628,7 +632,7 @@ h1 {
 }
 
 .hero-footnote strong {
-  color: #b8ceca;
+  color: #b8cddd;
 }
 
 .particle-stage {
@@ -641,10 +645,11 @@ h1 {
   min-height: 370px;
   place-items: center;
   overflow: hidden;
-  border: 1px solid rgb(164 226 211 / 10%);
+  border: 1px solid rgb(164 205 239 / 12%);
   border-radius: 19px;
   background:
-    radial-gradient(circle at var(--pointer-x) var(--pointer-y), rgb(78 202 168 / 10%), transparent 34%),
+    radial-gradient(circle at var(--pointer-x) var(--pointer-y), rgb(89 159 224 / 12%), transparent 34%),
+    radial-gradient(ellipse at 82% 78%, rgb(230 129 104 / 8%), transparent 46%),
     linear-gradient(145deg, rgb(14 26 29 / 15%), rgb(19 38 39 / 45%));
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 4%);
   perspective: 800px;
@@ -652,8 +657,8 @@ h1 {
 }
 
 .particle-stage.is-pointer-active {
-  border-color: rgb(126 223 192 / 27%);
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 6%), 0 0 45px rgb(64 196 160 / 9%);
+  border-color: rgb(130 188 235 / 32%);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 6%), 0 0 45px rgb(64 145 213 / 12%);
 }
 
 .particle-glow {
@@ -661,7 +666,7 @@ h1 {
   width: 76%;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: radial-gradient(circle, rgb(60 198 158 / 17%), rgb(63 119 151 / 7%) 38%, transparent 69%);
+  background: radial-gradient(circle, rgb(60 151 220 / 20%), rgb(63 119 151 / 7%) 38%, transparent 69%);
   filter: blur(8px);
   animation: glow-breathe 5.5s ease-in-out infinite;
 }
@@ -670,7 +675,7 @@ h1 {
   position: absolute;
   width: 78%;
   height: 37%;
-  border: 1px solid rgb(116 203 178 / 14%);
+  border: 1px solid rgb(116 170 216 / 19%);
   border-radius: 50%;
   transform: rotate(-24deg);
   animation: orbit-drift 26s linear infinite;
@@ -704,7 +709,7 @@ h1 {
   align-items: center;
   gap: 8px;
   padding: 9px 11px;
-  border: 1px solid rgb(205 240 229 / 12%);
+  border: 1px solid rgb(205 228 248 / 14%);
   border-radius: 7px;
   color: #c4d8d2;
   background: rgb(14 28 30 / 76%);
@@ -720,9 +725,9 @@ h1 {
   left: 15px;
   max-width: 48%;
   padding: 8px 10px;
-  border: 1px solid rgb(205 240 229 / 10%);
+  border: 1px solid rgb(205 228 248 / 12%);
   border-radius: 7px;
-  color: #a7c3bb;
+  color: #a7c3d6;
   background: rgb(14 28 30 / 66%);
   font-size: 7px;
   font-weight: 600;
@@ -735,37 +740,37 @@ h1 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #7ad9b8;
-  box-shadow: 0 0 9px rgb(122 217 184 / 80%);
+  background: #80bdf0;
+  box-shadow: 0 0 9px rgb(128 189 240 / 80%);
   animation: status-pulse 2.4s ease-in-out infinite;
 }
 
 .hero-stage .hero-interaction-hint {
   bottom: 59px;
-  color: #79908c;
+  color: #7e91a4;
   font-size: 8px;
   letter-spacing: .2px;
 }
 
 .hero-stage .hero-option-selector {
   bottom: 22px;
-  border-color: rgb(209 238 228 / 12%);
+  border-color: rgb(209 230 248 / 14%);
   background: rgb(11 23 25 / 78%);
   box-shadow: 0 8px 22px rgb(0 0 0 / 16%);
 }
 
 .hero-stage .hero-option-button {
-  color: #9bafaa;
+  color: #a0b3c7;
 }
 
 .hero-stage .hero-option-button:hover {
-  color: #e7fff5;
+  color: #e7f4ff;
 }
 
 .hero-stage .hero-option-button.is-active {
-  color: #10221f;
-  background: linear-gradient(145deg, #9ae5ca, #68c8ad);
-  box-shadow: 0 0 16px rgb(89 210 174 / 24%);
+  color: #102536;
+  background: linear-gradient(145deg, #a4d3f7, #71afe8);
+  box-shadow: 0 0 16px rgb(89 165 226 / 28%);
 }
 
 .particle-caption {
@@ -773,7 +778,7 @@ h1 {
   right: 0;
   bottom: 7px;
   left: 0;
-  color: #607a75;
+  color: #607a91;
   font-size: 6px;
   font-weight: 700;
   letter-spacing: .8px;
@@ -820,10 +825,10 @@ h2 {
   gap: 10px;
   margin: 0 0 16px;
   padding: 12px 14px;
-  border: 1px solid #d9e9e6;
+  border: 1px solid #d9e6f2;
   border-radius: 9px;
-  color: #61767b;
-  background: linear-gradient(110deg, #f0f8f6, #f8fbfb);
+  color: #61768b;
+  background: linear-gradient(110deg, #f0f6fc, #f8fbfe);
   font-size: 10px;
   line-height: 1.65;
 }
@@ -833,7 +838,7 @@ h2 {
 }
 
 .scenario-note strong {
-  color: #315c5d;
+  color: #315675;
 }
 
 .scenario-note-icon {
@@ -842,9 +847,9 @@ h2 {
   height: 17px;
   flex: 0 0 17px;
   place-items: center;
-  border: 1px solid #a9cbc4;
+  border: 1px solid #a9c7e2;
   border-radius: 50%;
-  color: #34766f;
+  color: #326d9e;
   font-size: 10px;
   font-weight: 700;
 }
@@ -856,6 +861,8 @@ h2 {
 }
 
 .option-card {
+  --option-accent: var(--blue);
+  --option-soft: #eff6fc;
   position: relative;
   display: flex;
   min-height: 430px;
@@ -871,6 +878,16 @@ h2 {
     transform 240ms cubic-bezier(.2, .75, .3, 1);
 }
 
+.option-card--2 {
+  --option-accent: #267e73;
+  --option-soft: #edf8f5;
+}
+
+.option-card--3 {
+  --option-accent: #bd5946;
+  --option-soft: #fff2ed;
+}
+
 .card-art {
   position: relative;
   display: grid;
@@ -880,25 +897,25 @@ h2 {
   place-items: center;
   background:
     radial-gradient(ellipse at 50% 80%, rgb(255 255 255 / 92%), transparent 57%),
-    linear-gradient(145deg, #e9f6f2, #eff6f7);
+    linear-gradient(145deg, #eaf3fb, #eff6fb);
 }
 
 .option-card--2 .card-art {
   background:
     radial-gradient(ellipse at 50% 80%, rgb(255 255 255 / 92%), transparent 57%),
-    linear-gradient(145deg, #eaf3f7, #eff5f7);
+    linear-gradient(145deg, #e8f7f3, #f1f8f6);
 }
 
 .option-card--3 .card-art {
   background:
     radial-gradient(ellipse at 50% 80%, rgb(255 255 255 / 92%), transparent 57%),
-    linear-gradient(145deg, #eef3f9, #f4f2f8);
+    linear-gradient(145deg, #fff0e9, #fff8f2);
 }
 
 .card-art::before {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgb(67 132 126 / 12%) .7px, transparent .7px);
+  background-image: radial-gradient(rgb(67 116 153 / 12%) .7px, transparent .7px);
   background-size: 13px 13px;
   content: "";
   mask-image: linear-gradient(90deg, transparent 3%, #000 48%, transparent 100%);
@@ -909,7 +926,7 @@ h2 {
   position: absolute;
   width: 178px;
   height: 69px;
-  border: 1px solid rgb(88 155 145 / 25%);
+  border: 1px solid color-mix(in srgb, var(--option-accent) 32%, transparent);
   border-radius: 50%;
   transform: rotate(-27deg);
   transition: transform 450ms ease, width 450ms ease;
@@ -925,7 +942,7 @@ h2 {
   position: relative;
   z-index: 1;
   width: min(286px, calc(100% - 32px));
-  filter: drop-shadow(0 8px 7px rgb(35 91 84 / 11%));
+  filter: drop-shadow(0 8px 7px rgb(35 76 111 / 11%));
   animation: tooth-float 4.8s ease-in-out infinite;
   transition: filter 300ms ease;
 }
@@ -943,12 +960,12 @@ h2 {
   width: 100%;
   height: auto;
   overflow: hidden;
-  border: 1px solid rgb(177 212 204 / 70%);
+  border: 1px solid color-mix(in srgb, var(--option-accent) 30%, #fff);
   border-radius: 16px;
 }
 
 .option-card:hover .card-procedure-visual {
-  filter: drop-shadow(0 12px 10px rgb(35 91 84 / 17%));
+  filter: drop-shadow(0 12px 10px rgb(35 76 111 / 17%));
 }
 
 .card-art-number {
@@ -968,7 +985,7 @@ h2 {
   z-index: 2;
   right: 14px;
   bottom: 12px;
-  color: #78928f;
+  color: #7a8fa3;
   font-size: 7px;
   font-weight: 700;
   letter-spacing: .85px;
@@ -977,7 +994,7 @@ h2 {
 .card-art-star {
   position: absolute;
   z-index: 2;
-  color: #72aaa2;
+  color: #679ed0;
   animation: sparkle 3.1s ease-in-out infinite;
 }
 
@@ -990,7 +1007,7 @@ h2 {
 .card-art-star--two {
   bottom: 29px;
   left: 26%;
-  color: #b2a36f;
+  color: var(--sunshine);
   font-size: 13px;
   animation-delay: -1.4s;
 }
@@ -1009,7 +1026,7 @@ h2 {
   left: 18px;
   height: 3px;
   border-radius: 0 0 4px 4px;
-  background: linear-gradient(90deg, #1aa398, #7ed1bc);
+  background: linear-gradient(90deg, var(--option-accent), color-mix(in srgb, var(--option-accent) 38%, #fff));
   content: "";
   opacity: 0;
   transform: scaleX(.25);
@@ -1019,7 +1036,7 @@ h2 {
 
 .option-card:hover {
   transform: translateY(-6px);
-  border-color: #d0e2df;
+  border-color: color-mix(in srgb, var(--option-accent) 35%, #fff);
   box-shadow: 0 18px 36px rgb(28 56 68 / 10%), 0 4px 9px rgb(28 56 68 / 4%);
 }
 
@@ -1030,8 +1047,8 @@ h2 {
 }
 
 .option-card.is-selected {
-  border-color: var(--teal);
-  box-shadow: 0 0 0 3px rgb(19 139 131 / 8%), 0 14px 32px rgb(28 56 68 / 8%);
+  border-color: var(--option-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--option-accent) 12%, transparent), 0 14px 32px rgb(28 56 68 / 8%);
 }
 
 .card-topline {
@@ -1060,15 +1077,15 @@ h2 {
 }
 
 .is-selected .option-number::before {
-  border: 2px solid var(--teal);
-  background: radial-gradient(var(--teal) 42%, transparent 47%);
+  border: 2px solid var(--option-accent);
+  background: radial-gradient(var(--option-accent) 42%, transparent 47%);
 }
 
 .selected-badge {
   padding: 5px 8px;
   border-radius: 5px;
-  color: var(--teal-dark);
-  background: var(--teal-pale);
+  color: var(--option-accent);
+  background: var(--option-soft);
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.25px;
@@ -1117,8 +1134,8 @@ h2 {
   flex: 0 0 18px;
   place-items: center;
   border-radius: 5px;
-  color: var(--teal-dark);
-  background: #edf7f5;
+  color: var(--blue-dark);
+  background: #edf4fb;
   font-size: 11px;
   font-weight: 700;
 }
@@ -1154,13 +1171,13 @@ h2 {
 
 .button-primary {
   color: #fff;
-  background: linear-gradient(135deg, #1a9b91, #10776f);
-  box-shadow: 0 4px 10px rgb(19 139 131 / 16%);
+  background: linear-gradient(135deg, #397fba, #285f91);
+  box-shadow: 0 4px 10px rgb(53 123 181 / 18%);
 }
 
 .button-primary:hover {
-  background: var(--teal-dark);
-  box-shadow: 0 7px 15px rgb(19 139 131 / 24%);
+  background: var(--blue-dark);
+  box-shadow: 0 7px 15px rgb(53 123 181 / 26%);
   transform: translateY(-2px);
 }
 
@@ -1180,13 +1197,13 @@ h2 {
 }
 
 .button-secondary:hover {
-  border-color: #b8cecb;
-  color: var(--teal-dark);
+  border-color: #b8cce0;
+  color: var(--blue-dark);
 }
 
 .button:focus-visible,
 .close-button:focus-visible {
-  outline: 3px solid rgb(19 139 131 / 30%);
+  outline: 3px solid rgb(53 123 181 / 32%);
   outline-offset: 2px;
 }
 
@@ -1202,7 +1219,7 @@ h2 {
 
 .compare-select:hover,
 .compare-select[aria-pressed="true"] {
-  color: var(--teal-dark);
+  color: var(--blue-dark);
 }
 
 .comparison-section {
@@ -1280,7 +1297,7 @@ h2 {
 }
 
 .comparison-table .selected-column {
-  background: linear-gradient(180deg, #edf8f5, #f5fbf9);
+  background: linear-gradient(180deg, #edf4fb, #f5f9fd);
   transition: background-color 220ms ease;
 }
 
@@ -1293,7 +1310,7 @@ h2 {
 }
 
 .table-note span {
-  color: var(--teal);
+  color: var(--blue);
   font-weight: 700;
 }
 
@@ -1399,7 +1416,7 @@ h2 {
 
 .dialog-disclaimer {
   margin: 16px 0 0;
-  color: #839197;
+  color: #8391a0;
   font-size: 11px;
   line-height: 1.6;
 }
@@ -1440,8 +1457,8 @@ h2 {
 }
 
 @keyframes status-pulse {
-  0%, 100% { box-shadow: 0 0 0 4px rgb(19 139 131 / 9%); }
-  50% { box-shadow: 0 0 0 7px rgb(19 139 131 / 4%); }
+  0%, 100% { box-shadow: 0 0 0 4px rgb(53 123 181 / 9%); }
+  50% { box-shadow: 0 0 0 7px rgb(53 123 181 / 4%); }
 }
 
 @keyframes badge-pop {

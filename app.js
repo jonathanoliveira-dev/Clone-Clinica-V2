@@ -60,8 +60,8 @@ function procedureIllustration(optionId) {
     <defs>
       <linearGradient id="${prefix}-enamel" x1="0" y1="0" x2="1" y2="1">
         <stop stop-color="#fff"/>
-        <stop offset=".58" stop-color="#f8fffd"/>
-        <stop offset="1" stop-color="#cce6e1"/>
+        <stop offset=".58" stop-color="#f8fbff"/>
+        <stop offset="1" stop-color="#d5e5f4"/>
       </linearGradient>
       <linearGradient id="${prefix}-gum" x1="0" y1="0" x2="0" y2="1">
         <stop stop-color="#f1b9a9"/>
@@ -72,17 +72,17 @@ function procedureIllustration(optionId) {
         <stop offset="1" stop-color="#dfd0b3"/>
       </linearGradient>
       <linearGradient id="${prefix}-metal" x1="0" y1="0" x2="1" y2="1">
-        <stop stop-color="#9bd9ce"/>
-        <stop offset=".52" stop-color="#4eaaa0"/>
-        <stop offset="1" stop-color="#277e79"/>
+        <stop stop-color="#a9d0f0"/>
+        <stop offset=".52" stop-color="#5d98c9"/>
+        <stop offset="1" stop-color="#326d9e"/>
       </linearGradient>
       <filter id="${prefix}-shadow" x="-20%" y="-20%" width="140%" height="150%">
-        <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#315c5a" flood-opacity=".16"/>
+        <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#315875" flood-opacity=".16"/>
       </filter>
     </defs>
   `;
   const background = `
-    <rect x="1" y="1" width="318" height="178" rx="18" fill="#f8fbfa"/>
+    <rect x="1" y="1" width="318" height="178" rx="18" fill="#f8fbfe"/>
     <path d="M1 144c44-9 78-8 116 0 37 8 80 8 119 0 34-7 59-8 83-3v20a17 17 0 0 1-17 17H18A17 17 0 0 1 1 161Z" fill="url(#${prefix}-bone)" opacity=".78"/>
     <path d="M1 124c43-14 81-8 119 0 44 10 82 10 122 0 31-8 55-8 77-2v24c-33-7-58-6-84 0-42 10-83 10-123 0-42-11-76-13-111-2Z" fill="url(#${prefix}-gum)" opacity=".9"/>
     <path d="M16 124c42-13 70-8 105 0 43 10 84 10 125 0 25-6 45-7 61-4" fill="none" stroke="#d9837d" stroke-width="2" stroke-linecap="round" opacity=".72"/>
@@ -97,7 +97,7 @@ function procedureIllustration(optionId) {
       Q${x + width * .53} ${y + height * .81} ${x + width * .5} ${y + height}
       Q${x + width * .47} ${y + height * .81} ${x + width * .36} ${y + height * .82}
       Q${x + width * .26} ${y + height * .83} ${x + width * .21} ${y + height * .62}Z"
-      fill="url(#${prefix}-enamel)" stroke="#b7d8d2" stroke-width="1.5"/>
+      fill="url(#${prefix}-enamel)" stroke="#bfd2e4" stroke-width="1.5"/>
     <path d="M${x + width * .24} ${y + height * .14}q${width * .1}-${height * .1} ${width * .22}-${height * .08}"
       fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".9"/>
   `;
@@ -108,16 +108,16 @@ function procedureIllustration(optionId) {
       ${tooth(58, 37, 49, 99)}
       ${tooth(213, 37, 49, 99)}
       <g filter="url(#${prefix}-shadow)">
-        <path d="M136 44q-8 0-8 9v17q0 9 8 12l3 3h34l3-3q8-3 8-12V53q0-9-8-9Z" fill="url(#${prefix}-enamel)" stroke="#b7d8d2" stroke-width="2"/>
+        <path d="M136 44q-8 0-8 9v17q0 9 8 12l3 3h34l3-3q8-3 8-12V53q0-9-8-9Z" fill="url(#${prefix}-enamel)" stroke="#bfd2e4" stroke-width="2"/>
         <path d="M145 84h28v11h-28z" fill="url(#${prefix}-metal)"/>
-        <path d="M143 94h32l-4 46-12 14-12-14Z" fill="url(#${prefix}-metal)" stroke="#277e79" stroke-width="2"/>
-        <path d="m142 101 33 4m-34 7 32 4m-31 7 30 4m-29 7 27 4" stroke="#d7f2eb" stroke-width="2" stroke-linecap="round" opacity=".92"/>
-        <path d="M143 94h32" stroke="#e3fff6" stroke-width="3" stroke-linecap="round"/>
+        <path d="M143 94h32l-4 46-12 14-12-14Z" fill="url(#${prefix}-metal)" stroke="#326d9e" stroke-width="2"/>
+        <path d="m142 101 33 4m-34 7 32 4m-31 7 30 4m-29 7 27 4" stroke="#dceeff" stroke-width="2" stroke-linecap="round" opacity=".92"/>
+        <path d="M143 94h32" stroke="#edf7ff" stroke-width="3" stroke-linecap="round"/>
       </g>
-      <path d="M197 49h21m-21 0 10-9" fill="none" stroke="#6fa9a0" stroke-width="1.5" stroke-linecap="round"/>
-      <circle cx="197" cy="49" r="2.5" fill="#4eaaa0"/>
-      <path d="M177 130h34m-34 0 8-8" fill="none" stroke="#6fa9a0" stroke-width="1.5" stroke-linecap="round"/>
-      <circle cx="177" cy="130" r="2.5" fill="#4eaaa0"/>
+      <path d="M197 49h21m-21 0 10-9" fill="none" stroke="#77a7d1" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="197" cy="49" r="2.5" fill="#5d98c9"/>
+      <path d="M177 130h34m-34 0 8-8" fill="none" stroke="#77a7d1" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="177" cy="130" r="2.5" fill="#5d98c9"/>
     `;
   } else if (optionId === "option-2") {
     anatomy = `
@@ -125,12 +125,12 @@ function procedureIllustration(optionId) {
       ${tooth(241, 43, 48, 98)}
       <g filter="url(#${prefix}-shadow)">
         <path d="M77 57q2-13 13-13h35q10 0 12 12l-2 29q-1 8-9 8H88q-9 0-10-9Zm53-1q2-12 12-12h36q10 0 12 12l-2 29q-1 8-9 8h-39q-9 0-10-9Zm54 0q2-12 12-12h35q11 0 13 13l-2 28q-1 8-10 8h-39q-8 0-9-9Z"
-          fill="url(#${prefix}-enamel)" stroke="#a9d0c9" stroke-width="2" stroke-linejoin="round"/>
+          fill="url(#${prefix}-enamel)" stroke="#b2cbe0" stroke-width="2" stroke-linejoin="round"/>
         <path d="M88 51q5-5 12-4m53 0q6-4 12 0m52-1q5 0 9 5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-        <path d="M89 93h138" stroke="#78b8ad" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+        <path d="M89 93h138" stroke="#78a9d2" stroke-width="2" stroke-linecap="round" opacity=".85"/>
       </g>
-      <path d="M113 106h94m-47 0v16" stroke="#6fa9a0" stroke-width="1.5" stroke-dasharray="3 4" stroke-linecap="round"/>
-      <circle cx="160" cy="122" r="3" fill="#4eaaa0"/>
+      <path d="M113 106h94m-47 0v16" stroke="#77a7d1" stroke-width="1.5" stroke-dasharray="3 4" stroke-linecap="round"/>
+      <circle cx="160" cy="122" r="3" fill="#5d98c9"/>
     `;
   } else {
     anatomy = `
@@ -333,14 +333,14 @@ function setupInteractiveArtwork() {
     };
   })();
   const palette = {
-    "option-1": ["#70e0bc", "#b0f6d9", "#a58bf3", "#f2c478"],
-    "option-2": ["#66d7eb", "#a8f1ed", "#8aa5ff", "#f0c77c"],
-    "option-3": ["#84dfbd", "#d5edaa", "#c29af5", "#f1bb81"],
+    "option-1": ["#75b8ec", "#b8dcfa", "#52c5aa", "#f2c478"],
+    "option-2": ["#45b9a5", "#a8e2d6", "#78a9e8", "#f0c77c"],
+    "option-3": ["#e98d74", "#f4b39f", "#85afe8", "#f1c66e"],
   };
   const anatomyPalette = {
-    "option-1": { bone: "#dfa997", boneLight: "#f0c7b4", metal: "#9de8cf", enamel: "#d9fff0" },
-    "option-2": { bone: "#8fdac4", boneLight: "#c1efda", metal: "#75d6ba", enamel: "#e2fff4" },
-    "option-3": { bone: "#d69bc8", boneLight: "#efc4dc", metal: "#c29af5", enamel: "#e6fff4" },
+    "option-1": { bone: "#dfa997", boneLight: "#f0c7b4", metal: "#8dbfe8", enamel: "#dceeff" },
+    "option-2": { bone: "#a9c8dc", boneLight: "#d1e3f2", metal: "#55b9a5", enamel: "#e5f7f2" },
+    "option-3": { bone: "#e2b08f", boneLight: "#f3d2b7", metal: "#e98d74", enamel: "#fff0e8" },
   };
   const pointer = { x: 0, y: 0, active: false };
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -434,7 +434,7 @@ function setupInteractiveArtwork() {
     context.translate(-60, -66);
     context.lineWidth = 1.25 / scale;
     context.strokeStyle = strokeStyle;
-    context.fillStyle = "rgba(188, 239, 219, 0.035)";
+    context.fillStyle = "rgba(190, 220, 246, 0.04)";
     context.fill(path);
     context.stroke(path);
     context.restore();
@@ -456,7 +456,7 @@ function setupInteractiveArtwork() {
     context.bezierCurveTo(82, 88, 103, 91, 128, 85);
     context.stroke();
 
-    context.fillStyle = "rgba(124, 222, 187, 0.16)";
+    context.fillStyle = "rgba(124, 180, 225, 0.16)";
     context.strokeStyle = colors.metal;
     context.lineWidth = 2.2;
     context.fill(implantOutline);
@@ -464,7 +464,7 @@ function setupInteractiveArtwork() {
 
     context.save();
     context.clip(implantOutline);
-    context.strokeStyle = "rgba(178, 247, 218, 0.82)";
+    context.strokeStyle = "rgba(190, 224, 250, 0.82)";
     context.lineWidth = 1.25;
     for (let y = 87; y < 122; y += 6) {
       context.beginPath();
@@ -486,9 +486,9 @@ function setupInteractiveArtwork() {
   }
 
   function traceBridgeDetails(colors) {
-    traceTooth(-34, 0.55, toothOutline, "rgba(164, 237, 208, 0.82)");
+    traceTooth(-34, 0.55, toothOutline, "rgba(174, 211, 242, 0.82)");
     traceTooth(0, 0.59, crownOutline, colors.enamel);
-    traceTooth(34, 0.55, toothOutline, "rgba(164, 237, 208, 0.82)");
+    traceTooth(34, 0.55, toothOutline, "rgba(174, 211, 242, 0.82)");
     context.strokeStyle = colors.metal;
     context.lineWidth = 2.2;
     context.beginPath();
@@ -593,7 +593,7 @@ function setupInteractiveArtwork() {
 
     context.clearRect(0, 0, width, height);
     const centerGlow = context.createRadialGradient(centerX, centerY, 8, centerX, centerY, scale * 0.82);
-    centerGlow.addColorStop(0, "rgba(65, 195, 155, 0.12)");
+    centerGlow.addColorStop(0, "rgba(65, 145, 210, 0.14)");
     centerGlow.addColorStop(0.54, "rgba(71, 130, 156, 0.045)");
     centerGlow.addColorStop(1, "rgba(16, 25, 29, 0)");
     context.fillStyle = centerGlow;
@@ -630,7 +630,7 @@ function setupInteractiveArtwork() {
             if (neighbor.index <= point.index) return;
             const distance = Math.hypot(point.x - neighbor.x, point.y - neighbor.y);
             if (distance > 21) return;
-            context.strokeStyle = `rgba(148, 227, 196, ${(1 - distance / 21) * 0.15})`;
+            context.strokeStyle = `rgba(148, 198, 235, ${(1 - distance / 21) * 0.17})`;
             context.beginPath();
             context.moveTo(point.x, point.y);
             context.lineTo(neighbor.x, neighbor.y);
